@@ -1,3 +1,6 @@
+# 가상환경
+myenv/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
