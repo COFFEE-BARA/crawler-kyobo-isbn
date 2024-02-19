@@ -14,7 +14,7 @@ DATE_FORMAT = os.getenv('DATE_FORMAT')
 ELASTIC_PASSWORD = os.getenv('ELASTIC_PASSWORD')
 CLOUD_ID = os.getenv('CLOUD_ID')
 ELASTIC_ID = os.getenv('ELASTIC_ID')
-ELASTIC_INDEX_NAME = os.getenv('ELASTIC_INDEX_NAME')
+ELASTIC_ISBN_INDEX = os.getenv('ELASTIC_ISBN_INDEX')
 REGION_NAME = os.getenv('REGION_NAME')
 ACCESS_KEY_ID = os.getenv('ACCESS_KEY_ID')
 SECRET_ACCESS_KEY= os.getenv('SECRET_ACCESS_KEY')
@@ -22,12 +22,13 @@ DYNAMODB_TABLE_NAME = os.getenv('DYNAMODB_TABLE_NAME')
 DYNAMODB_INDEX_NAME = os.getenv('DYNAMODB_INDEX_NAME')
 DYNAMODB_SORT_BY_PROPERTY = os.getenv('DYNAMODB_SORT_BY_PROPERTY')
 
+print(ELASTIC_ISBN_INDEX)
 
 if(DATE_FORMAT is None or
     ELASTIC_PASSWORD is None or
     CLOUD_ID is None or
     ELASTIC_ID is None or
-    ELASTIC_INDEX_NAME is None or
+    ELASTIC_ISBN_INDEX is None or
     REGION_NAME is None or
     ACCESS_KEY_ID is None or
     SECRET_ACCESS_KEY is None or
@@ -176,7 +177,7 @@ for i in range(len(cate_code_recent_pub_date_list)):
         if(flag) :
             if(len(docu_list)!=0):
                 #모아놓은 isbn push
-                pushBulkDataElasticIndex(client, ELASTIC_INDEX_NAME, docu_list)
+                pushBulkDataElasticIndex(client, ELASTIC_ISBN_INDEX, docu_list)
                 docu_list = [] #리스트 초기화
             break
 
@@ -205,7 +206,7 @@ for i in range(len(cate_code_recent_pub_date_list)):
                     break
 
                 docu['category'] = cate
-                docu['isbn'] = isbn
+                docu['isbn'] = str(isbn)
                 docu['crawling_date'] = date.today().isoformat()
                 docu_list.append(docu)
 
@@ -214,7 +215,7 @@ for i in range(len(cate_code_recent_pub_date_list)):
 
                 if len(docu_list) >= 300:
                     #모아놓은 isbn push
-                    pushBulkDataElasticIndex(client, ELASTIC_INDEX_NAME, docu_list)
+                    pushBulkDataElasticIndex(client, ELASTIC_ISBN_INDEX, docu_list)
                     docu_list = [] #리스트 초기화
        
             except IndexError:
@@ -223,7 +224,8 @@ for i in range(len(cate_code_recent_pub_date_list)):
 
 if(len(docu_list)!=0) :
     #6. 모아놓은 isbn push
-    pushBulkDataElasticIndex(client, ELASTIC_INDEX_NAME, docu_list)
+    pushBulkDataElasticIndex(client, ELASTIC_ISBN_INDEX, docu_list)
+
 
 if(len(payload)!=0) :
     #7. 모아놓은 크롤링한 최신 출간일 push
