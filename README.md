@@ -1,17 +1,21 @@
-# 서비스 소개
+# 📖 서비스 소개
 
 ![image](https://github.com/COFFEE-BARA/crawler-kyobo-isbn/assets/65851554/aeecb4be-6f02-4bfd-a6e5-88df1ef87c8a)
 
 ![image](https://github.com/COFFEE-BARA/crawler-kyobo-isbn/assets/65851554/9ad000e0-5c95-4799-9582-2c49ecd5232b)
 
+
 <br/>
 <br/>
 
-## 시연영상
+
+## 📹 시연영상
 ### AI 책 추천
 
 ![챗봇](https://github.com/COFFEE-BARA/crawler-kyobo-isbn/assets/65851554/a28f0cca-ae1f-46b9-a087-6ea18216bd9d)
 
+
+<br/>
 
 
 ### 책 검색 & 서점 재고 확인 & 대출 가능 도서관 확인
@@ -19,12 +23,19 @@
 ![__-ezgif com-resize](https://github.com/COFFEE-BARA/crawler-kyobo-isbn/assets/65851554/699d09a6-8691-4ca0-bab5-575340a3c34d)
 
 
+<br/>
+
+
 ### 키바나 통계보기
 
 ![통계](https://github.com/COFFEE-BARA/crawler-kyobo-isbn/assets/65851554/d4ac2392-57ff-406f-b03e-334c932d56ce)
 
 
-## 발전 방향
+<br/>
+<br/>
+
+
+## 📡 발전 방향
 
 ![image](https://github.com/COFFEE-BARA/crawler-kyobo-isbn/assets/65851554/d18f754c-773d-43b9-b961-7931703aaeb8)
 
@@ -32,7 +43,8 @@
 <br/>
 <br/>
 
-# 팀원 소개
+
+# 👥 팀원 소개
 
 ![image](https://github.com/COFFEE-BARA/crawler-kyobo-isbn/assets/65851554/62566ebc-48e5-4aed-90f4-fe5f406ca66c)
 | 유수화 | 송윤주 | 현유경 | 양다연 |
@@ -43,7 +55,7 @@
 <br/>
 
 
-# 전체 아키텍처
+# ⚒️ 전체 아키텍처
 
 ![image](https://github.com/COFFEE-BARA/crawler-kyobo-isbn/assets/65851554/04a7f4e8-2c00-4084-88e2-e7ffd273187a)
 
@@ -171,6 +183,9 @@
   }
 }
 ```
+
+<br/>
+
 
 ### book-index settings
 
@@ -560,7 +575,7 @@
 
 ### kyobo-isbn-cate-index mapping
 
-```python
+```
 {
   "mappings": {
     "properties": {
@@ -583,6 +598,10 @@
   }
 }
 ```
+
+<br/>
+
+
 
 ### kyobo-isbn-cate-index settings
 
@@ -923,6 +942,9 @@
 }
 ```
 <br/>
+
+## 데이터 관리전략
+
 
 ![image](https://github.com/COFFEE-BARA/crawler-kyobo-isbn/assets/65851554/10c4db70-82ec-4219-a9cb-77a2fe11e69b)
 
