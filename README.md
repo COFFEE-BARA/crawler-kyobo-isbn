@@ -1,4 +1,5 @@
-# 📖 서비스 소개
+
+# 📚 Checkbara 서비스 소개
 
 ![image](https://github.com/COFFEE-BARA/crawler-kyobo-isbn/assets/65851554/aeecb4be-6f02-4bfd-a6e5-88df1ef87c8a)
 
@@ -46,9 +47,11 @@
 
 # 👥 팀원 소개
 
-![image](https://github.com/COFFEE-BARA/crawler-kyobo-isbn/assets/65851554/62566ebc-48e5-4aed-90f4-fe5f406ca66c)
-| 유수화 | 송윤주 | 현유경 | 양다연 |
-| --- | --- | --- |  --- |
+| <img width="165" alt="suwha" src="https://github.com/COFFEE-BARA/be-bookstore-stock/assets/72396865/19e01fac-5384-4ec7-98f1-9e1e613429b4"> | <img width="165" alt="yoonju" src="https://github.com/COFFEE-BARA/be-bookstore-stock/assets/72396865/fb0a14c6-2d02-4105-962e-4565663817cc"> | <img width="165" alt="yugyeong" src="https://github.com/COFFEE-BARA/be-bookstore-stock/assets/72396865/90b7268d-92e5-43d1-9da8-ae48afd9e8c1"> | <img width="165" alt="dayeon" src="https://github.com/COFFEE-BARA/be-bookstore-stock/assets/72396865/f19e65e6-0856-4b6a-a355-993ce83ddcb7"> |
+| --- | --- | --- | --- |
+| 🐼[유수화](https://github.com/YuSuhwa-ve)🐼 | 🐱[송윤주](https://github.com/raminicano)🐱 | 🐶[현유경](https://github.com/yugyeongh)🐶 | 🐤[양다연](https://github.com/dayeon1201)🐤 |
+| Server / Data / BE | AI / Data / BE | Infra / BE / FE | BE / FE |
+
 
 
 <br/>
