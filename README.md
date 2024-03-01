@@ -81,7 +81,9 @@
 
 ## book-index
 
-### book-index mapping
+<details>
+<summary>book-index mapping</summary>
+<div markdown="1">
 
 ```
 // book-index mapping
@@ -184,10 +186,13 @@
 }
 ```
 
-<br/>
+</div>
+</details>
 
 
-### book-index settings
+<details>
+<summary> book-index settings </summary>
+<div markdown="1">
 
 ```
 //book -index settings
@@ -569,11 +574,20 @@
 }
 ```
 
+
+</div>
+</details>
+
+
+
 <br/>
 
 ## kyobo-isbn-cate-index
 
-### kyobo-isbn-cate-index mapping
+
+<details>
+<summary> kyobo-isbn-cate-index mapping </summary>
+<div markdown="1">
 
 ```
 {
@@ -599,11 +613,15 @@
 }
 ```
 
-<br/>
+</div>
+</details>
 
 
 
-### kyobo-isbn-cate-index settings
+<details>
+<summary> kyobo-isbn-cate-index settings </summary>
+<div markdown="1">
+
 
 ```
 //settings
@@ -941,6 +959,14 @@
   }
 }
 ```
+
+
+</div>
+</details>
+
+
+
+
 <br/>
 
 ## 데이터 관리전략
